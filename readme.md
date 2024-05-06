@@ -1,7 +1,7 @@
 ## Technical Assignment: Pokémon Personality Profiler
 
 ### Objective:
-The objective of this assignment is to enhance the existing repository by implementing additional features using Nuxt.js and integrating the OpenAI API. The task involves enabling users to manage their Pokémon collection within a "Pokeball store" and utilizing the OpenAI API to provide personalized insights based on the Pokémon in their collection.
+The objective of this assignment is to enhance the existing repository by implementing additional features using [Nuxt](https://nuxt.com) and integrating the OpenAI API. The task involves enabling users to manage their Pokémon collection within a "Pokeball store" and utilizing the OpenAI API to provide personalized insights based on the Pokémon in their collection.
 
 ### Tasks:
 
@@ -24,12 +24,15 @@ The objective of this assignment is to enhance the existing repository by implem
 5. **OpenAI API Integration:**
    - Acquire API keys for the OpenAI API (ensure they are kept secure).
    - Utilize the OpenAI API to generate insights about a user's personality based on the Pokémon in their Pokeball store.
-   - Design and implement a mechanism to process the Pokémon data and generate meaningful insights using the OpenAI API.
+   - Design and implement a mechanism to process the Pokémon data and generate meaningful insights using the OpenAI API: tell the user something about themselves based on the Pokémon they have collected.
+
+6. **UI/UX Enhancements:**
+   - Determine the best ways to show the additional features and data on the existing pages. This doesn't need to be overly complex, but should be a bit user-friendly.
 
 ### Deliverables:
 
-1. **Pull Request:**
-   - Submit a pull request to the original repository containing your changes.
+1. **Fork:**
+   - Submit a repository that is a fork of the provided repository with the implemented features.
 
 2. **Documentation:**
    - Document any setup instructions or additional steps necessary to run the application.
@@ -45,3 +48,11 @@ The assignment should be completed within **14 days** of receiving this document
 - Feel free to utilize any additional libraries or tools that may facilitate the implementation of the required features.
 - Regular commits and clear commit messages are appreciated for better collaboration and tracking of changes.
 - Reach out for any clarification or assistance needed during the assignment period. My email is [tomvanveen@visma.com](mailto:tomvanveen@visma.com).
+
+
+### Key factors to consider:
+- **Code Quality:** Ensure that the code is well-structured, readable, and follows best practices.
+- **Functionality:** Implement the required features accurately and ensure they work as expected.
+- **Maintainability:** Design the application in a way that makes it easy to maintain and extend in the future.
+- **User Experience:** Consider the user experience when designing the application and ensure it is intuitive and user-friendly.
+
