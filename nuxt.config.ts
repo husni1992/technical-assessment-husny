@@ -84,6 +84,13 @@ export default defineNuxtConfig({
       pokemon: {
         url: 'https://pokeapi.co/api/v2',
       },
+      openai: {
+        url: 'https://run.mocky.io/v3/f793428c-2e69-4db4-a120-4f68c9faa190',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
+        },
+      }
     },
   },
 })
