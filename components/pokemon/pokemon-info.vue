@@ -48,8 +48,14 @@ const buttonColor = computed(() => {
     <div class="h-[23ch]">
       <pokemon-image v-if="data" :pokemon="data" class="w-full" />
     </div>
-    <footer class="flex p-2">
-      <UButton :color="buttonColor" class="ml-auto" :disabled="!data" @click="handleAddingToBasket">
+    <footer class="flex p-2 justify-items-center">
+      <nuxt-link :to="{ name: 'pokemon-overview-name', params: { name: data?.name || '' } }">
+        <UButton color="blue" variant="solid">
+          Overview
+        </UButton>
+      </nuxt-link>
+
+      <UButton :color="buttonColor" class="ml-auto" :disabled="!data" @click.stop="handleAddingToBasket">
         {{ pokeballStore[pokemon.id] ? "Remove" : "Add" }}
       </UButton>
     </footer>

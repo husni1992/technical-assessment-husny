@@ -5,7 +5,7 @@
         Pokemon
       </h1>
       <nuxt-link to="/" class="ml-auto">
-        Go back to the home page
+        Go back to the home pag
       </nuxt-link>
     </header>
     <main>
