@@ -1,7 +1,8 @@
 <script setup lang="ts">
 
 const props = defineProps<{
-  name: string
+  name: string,
+  isMyCollectionPage: boolean
 }>();
 
 const { data } = usePokemonData<Pokemon>(`pokemon/${props.name}`);
@@ -49,7 +50,8 @@ const buttonColor = computed(() => {
       <pokemon-image v-if="data" :pokemon="data" class="w-full" />
     </div>
     <footer class="flex p-2 justify-items-center">
-      <nuxt-link :to="{ name: 'pokemon-overview-name', params: { name: data?.name || '' } }">
+      <nuxt-link v-if="props.isMyCollectionPage"
+        :to="{ name: 'pokemon-overview-name', params: { name: data?.name || '' } }">
         <UButton color="blue" variant="solid">
           Overview
         </UButton>

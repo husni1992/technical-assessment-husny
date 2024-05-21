@@ -8,7 +8,7 @@ const pokemons = computed(() => Object.values(pokeballStore.value));
 <template>
     <ul v-if="pokemons.length" class="flex gap-8 flex-wrap p-4">
         <li v-for="pokemon in pokemons" :key="pokemon.id" class="w-[25ch]">
-            <pokemon-info :name="pokemon.name" />
+            <pokemon-info :name="pokemon.name" :isMyCollectionPage="true"/>
         </li>
     </ul>
     <div v-if="!pokemons.length">
